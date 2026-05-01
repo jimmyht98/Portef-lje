@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal - Jimmy H. Trinh</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary: #c7c7c7;
+            --secondary: #121212;
+            --accent: #FF6B35;
+            --light-gray: #272727;
+            --dark-gray: #080707;
+        }
+
+        body {
+            background: var(--secondary);
+            color: var(--primary);
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: rgba(20, 20, 20, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        nav a {
+            color: rgba(244, 244, 244, 0.88);
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            min-height: 80vh;
+            background: linear-gradient(135deg, #111111 0%, #1e1e1e 55%, #292929 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 3rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .hero p {
+            max-width: 720px;
+            margin: 0 auto 2rem;
+            color: rgba(244, 244, 244, 0.85);
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+
+        .about-section {
+            padding: 4rem 2rem 3rem;
+            max-width: 920px;
+            margin: -3rem auto 2rem;
+            background: linear-gradient(180deg, rgba(30, 30, 30, 0.98) 0%, rgba(25, 25, 25, 0.99) 60%, rgba(20, 20, 20, 1) 100%);
+            border-radius: 36px;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.25rem;
+            color: var(--primary);
+        }
+
+        .about-section p {
+            max-width: 760px;
+            margin: 0 auto 1rem;
+            color: rgba(244, 244, 244, 0.85);
+            line-height: 1.8;
+        }
+
+        #journal-content .project-detail {
+            justify-items: center;
+        }
+
+        .project-detail {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 320px;
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 3rem auto 0;
+            padding: 0;
+        }
+
+        .project-summary,
+        .project-side {
+            background: rgba(40, 40, 40, 0.95);
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: 0 24px 50px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            text-align: left;
+        }
+
+        .project-summary h3,
+        .project-side h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .project-summary p,
+        .project-side p,
+        .project-summary ul,
+        .project-side ul {
+            color: rgba(244, 244, 244, 0.88);
+            line-height: 1.8;
+        }
+
+        .project-summary ul,
+        .project-side ul {
+            list-style: disc;
+            padding-left: 1.4rem;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: var(--primary);
+            color: var(--secondary);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 900px) {
+            .project-detail {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                padding: 1rem 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="logo">Jimmy H. Trinh</span>
+            <div>
+                <a href="index.html">Hjem</a>
+                <a href="index.html#om-meg">Om meg</a>
+                <a href="index.html#prosjekter">Prosjekter</a>
+                <a href="journal.html">Journal</a>
+                <a href="index.html#kontakt">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="journal-hero">
+        <div>
+            <h1>Journal</h1>
+            <p>En løpende prosjektdagbok som beskriver hva jeg lærer, hvilke utfordringer jeg møter og hvordan jeg forbedrer løsninger over tid.</p>
+            <a href="#journal-content" class="btn">Les journalen</a>
+        </div>
+    </section>
+
+    <section class="about-section" id="journal-content">
+        <h2>Prosjektdagboken</h2>
+        <p>Journalen viser hvordan jeg jobber med prosjektene mine, hvilke valg jeg tar underveis, og hvordan jeg bruker erfaringene mine til å forbedre neste versjon.</p>
+        <p>Dette er ikke bare oppsummeringer av ferdige produkter, men også refleksjoner over metodikk, teknologi og leveranser.</p>
+
+        <div class="project-detail">
+            <div class="project-summary">
+                <h3>Uke 1: Initiering og planlegging</h3>
+                <p>Startet arbeidet med å definere mål for porteføljen og planlegge prosjektstrukturen. Først iverksatt jeg å etablere en solid grunnlag for utvikling av nettside
+                    som var både responsivt og interaktivt. Jeg fokuserte på å skape en visuell identitet som reflekterer min personlige stil og profesjonelle image.
+                </p>
+            </div>
+            <div class="project-side">
+                <h3>Hovedfokus</h3>
+                <ul>
+                    <li>Struktur og navigasjon</li>
+                    <li>Responsivt design</li>
+                    <li>Visuell identitet</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-detail">
+            <div class="project-summary">
+                <h3>Uke 2: Utvikling og finpussing</h3>
+                <p>Arbeidet videre med prosjektkort, interaksjoner og gradienter. Justerte farger for bedre kontrast og testet gjennom hele brukerreisen.</p>
+            </div>
+            <div class="project-side">
+                <h3>Resultater</h3>
+                <ul>
+                    <li>Bedre innholdshierarki</li>
+                    <li>Mer moderne knappestil</li>
+                    <li>Forbedret brukeropplevelse</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-detail">
+            <div class="project-summary">
+                <h3>Uke 3: Levering og refleksjon</h3>
+                <p>Gjennomgikk siden for konsistens og kvalitet. Lagt til dokumentasjon, nye prosjekt-sider og oppdatert README for GitHub-presentasjon.</p>
+            </div>
+            <div class="project-side">
+                <h3>Læring</h3>
+                <ul>
+                    <li>Viktigheten av god dokumentasjon</li>
+                    <li>Hvordan et sterkt visuelt uttrykk påvirker førsteinntrykket</li>
+                    <li>Betydningen av god lesbarhet og kontrast</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Jimmy H. Trinh. Alle rettigheter forbeholdt.</p>
+    </footer>
+</body>
+</html>
