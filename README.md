@@ -1,8 +1,8 @@
-# Jimmy H. Trinh - Portefølje Nettsted
+# Jimmy H. Trinh - Portfolio Website
 
-A modern, responsive portfolio website built with HTML, CSS, and JavaScript. Showcasing projects, skills, and professional experience with an elegant design that impresses employers and clients.
+A modern, responsive portfolio website built with HTML and CSS. Showcasing projects, skills, and professional experience with an elegant design that impresses employers and clients.
 
-[Status: Active] [License: MIT] [Language: Norwegian]
+[Status: Active] [Language: Norwegian]
 
 ---
 
@@ -35,7 +35,7 @@ This is a professional portfolio website designed to showcase development skills
 - Dark mode support based on system preferences
 - Smooth animations and transitions
 - Interactive elements and hover effects
-- Apple SF Pro font family for premium feel
+- Apple SF Pro font family for a premium feel
 
 ---
 
@@ -54,13 +54,10 @@ This is a professional portfolio website designed to showcase development skills
 - Smooth hover animations on skill items
 
 ### Portfolio Projects
-- 6 featured projects with individual detail pages:
+- 3 featured school projects with individual detail pages:
   - **NaviSafe** - Aerial Obstacle Reporting System
   - **Bcycle** - Database system for bike rental
-  - **Design System** - Reusable component library
-  - **Bloggplattform** - Content management system
-  - **Analytics Dashboard** - Data visualization tool
-  - **API Integration** - Third-party service integration
+  - **Groupr** - Student grouping application
 - Interactive project cards with gradient backgrounds
 - Individual project pages with detailed information
 
@@ -68,13 +65,11 @@ This is a professional portfolio website designed to showcase development skills
 - Multiple contact methods
 - Social media links
 - Email contact option
-- Beautifully styled buttons
 
 ### Navigation
 - Sticky navigation bar
 - Smooth scrolling to sections
 - Responsive mobile navigation
-- Logo with emoji branding
 
 ### Animations & Interactions
 - Staggered scroll animations
@@ -99,10 +94,7 @@ Portfoilo-website/
 ├── style.css                     # Global styles and theme
 ├── navi-safe.html               # NaviSafe project page
 ├── bcycle.html                  # Bcycle project page
-├── design-system.html           # Design system project page
-├── blog-plattform.html          # Blog platform project page
-├── analytics-dashboard.html     # Analytics dashboard project page
-├── api-integrasjon.html         # API integration project page
+├── groupr.html                  # Groupr project page
 └── README.md                    # This file
 ```
 
@@ -126,11 +118,6 @@ Portfoilo-website/
   - CSS Variables for theming
   - Media queries for responsiveness
   - Animations and transitions
-- **JavaScript (Vanilla)** - For interactivity:
-  - Intersection Observer API for scroll animations
-  - Smooth scrolling
-  - Typing effect
-  - Animation staggering
 
 ### Design System
 - **Font Family:** Apple SF Pro (San Francisco)
@@ -450,10 +437,8 @@ in the Software without restriction...
 **Jimmy H. Trinh**
 
 - Email: jimmyht98@hotmail.com
-- GitHub: [github.com/asklootz](https://github.com/asklootz)
-- LinkedIn: [linkedin.com/in/jimmyt](https://linkedin.com/in/jimmyt)
-- Twitter: [@jimmytrinh](https://twitter.com/jimmytrinh)
-- Website: [jimmytrinh.com](https://jimmytrinh.com)
+- GitHub: [github.com/jimmyht98](https://github.com/jimmyht98)
+- LinkedIn: [linkedin.com/in/jimmy-trinh](https://www.linkedin.com/in/jimmy-trinh-578951264/)
 
 ### Let's Connect!
 Feel free to reach out for:
@@ -498,15 +483,11 @@ Resources that helped build this portfolio:
 ## Future Enhancements
 
 Planned features for future versions:
-- Blog section with dynamic posts
 - Project filtering by technology
 - Contact form with email integration
 - Analytics tracking
-- Multi-language support
 - CMS integration
 - Animation preferences (respects prefers-reduced-motion)
-- Newsletter signup
-- Resume download
 - Case study articles
 
 ---
@@ -524,10 +505,4 @@ Planned features for future versions:
 
 ---
 
-**Made with passion and lots of JavaScript magic**
-
----
-
 *Last Updated: May 1, 2026*
-
-*For questions or feedback, please [create an issue](https://github.com/asklootz/portfolio-website/issues) or reach out directly!*
