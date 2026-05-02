@@ -169,9 +169,9 @@ npx http-server
 # Or simply open index.html in your browser
 ```
 
-3. **View in browser**
+3. **View in browser (using Netlify for deployment**
 ```
-http://localhost:8000
+https://jimmyht.netlify.app/
 ```
 
 ### Quick Start (No Server Required)
