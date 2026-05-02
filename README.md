@@ -118,6 +118,7 @@ Portfoilo-website/
   - CSS Variables for theming
   - Media queries for responsiveness
   - Animations and transitions
+- **JavaScript** - Smoother transistions
 
 ### Design System
 - **Font Family:** Apple SF Pro (San Francisco)
