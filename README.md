@@ -15,11 +15,9 @@ A modern, responsive portfolio website built with HTML and CSS. Showcasing proje
 - [Getting Started](#getting-started)
 - [Projects](#projects)
 - [Customization](#customization)
-- [Dark Mode Support](#dark-mode-support)
 - [Browser Support](#browser-support)
 - [Performance](#performance)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ---
@@ -36,6 +34,7 @@ This is a professional portfolio website designed to showcase development skills
 - Smooth animations and transitions
 - Interactive elements and hover effects
 - Apple SF Pro font family for a premium feel
+- Personal photo in the About section for a strong first impression
 
 ---
 
@@ -48,7 +47,9 @@ This is a professional portfolio website designed to showcase development skills
 - Call-to-action button
 
 ### About Section
-- Professional biography and background
+- Personal profile photo displayed centered above the bio
+- Professional biography and background (left-aligned for readability)
+- Centered "Om meg" and "Ferdigheter" headings
 - Skills displayed in an interactive grid layout
 - 6 skill categories: Frontend, Backend, Database, Infrastructure, Cloud Services, and Personal Traits
 - Smooth hover animations on skill items
@@ -67,7 +68,7 @@ This is a professional portfolio website designed to showcase development skills
 - Email contact option
 
 ### Navigation
-- Sticky navigation bar
+- Sticky navigation bar with consistent spacing across all pages
 - Smooth scrolling to sections
 - Responsive mobile navigation
 
@@ -89,9 +90,10 @@ This is a professional portfolio website designed to showcase development skills
 ## Project Structure
 
 ```
-Portfoilo-website/
+Portfolio-website/
 ├── index.html                    # Main landing page
 ├── style.css                     # Global styles and theme
+├── jimmy-photo.jpeg              # Profile photo (place in repo root)
 ├── navi-safe.html               # NaviSafe project page
 ├── bcycle.html                  # Bcycle project page
 ├── groupr.html                  # Groupr project page
@@ -102,9 +104,12 @@ Portfoilo-website/
 
 | File | Purpose | Size |
 |------|---------|------|
-| `index.html` | Main portfolio page with hero, about, projects, and contact sections | ~15KB |
+| `index.html` | Main portfolio page with hero, about, projects, and contact sections | ~20KB |
 | `style.css` | Global styles, animations, responsive design, and dark mode | ~20KB |
+| `jimmy-photo.jpeg` | Profile photo displayed in the About section | ~1MB |
 | `*-project.html` | Individual project detail pages | ~3-4KB each |
+
+> **Note:** `index.html` references `style.css` and `jimmy-photo.jpeg` as external files. Make sure all three are in the same folder when deploying.
 
 ---
 
@@ -118,11 +123,11 @@ Portfoilo-website/
   - CSS Variables for theming
   - Media queries for responsiveness
   - Animations and transitions
-- **JavaScript** - Smoother transistions
+- **JavaScript** - Smoother transitions
 
 ### Design System
 - **Font Family:** Apple SF Pro (San Francisco)
-- **Color Scheme:** 
+- **Color Scheme:**
   - Primary: #1a1a1a (Dark)
   - Secondary: #ffffff (White)
   - Accent: #FF6B35 (Orange)
@@ -149,7 +154,7 @@ Portfoilo-website/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/portfolio-website.git
+git clone https://github.com/jimmyht98/portfolio-website.git
 cd portfolio-website
 ```
 
@@ -170,7 +175,7 @@ http://localhost:8000
 ```
 
 ### Quick Start (No Server Required)
-Simply download the files and open `index.html` in your web browser. The portfolio works offline!
+Simply download the files and open `index.html` in your web browser. Make sure `style.css` and `jimmy-photo.jpeg` are in the same folder.
 
 ---
 
@@ -188,7 +193,7 @@ Simply download the files and open `index.html` in your web browser. The portfol
 **Repository:** [NaviSafe on GitHub](https://github.com/asklootz/NaviSafe)
 
 ### Bcycle - Bike Rental Database System
-- **Stack:** Database system, ASP.NET Core
+- **Stack:** PLSQL, ASP.NET Core
 - **Team Project:** Developed with group members
 - **Features:**
   - Bike rental management
@@ -196,39 +201,16 @@ Simply download the files and open `index.html` in your web browser. The portfol
   - Reservation system
   - Analytics and reporting
 
-### Design System
-- **Stack:** HTML, CSS
-- **Purpose:** Reusable UI components and style guide
-- **Includes:**
-  - Button styles and variations
-  - Typography hierarchy
-  - Color palette and usage guidelines
-  - Layout components
-  - Responsive grid system
+**Repository:** [Bcycle on GitHub](https://github.com/jimmyht98/IS309)
 
-### Bloggplattform
-- **Stack:** Node.js, HTML/CSS/JavaScript
+### Groupr - Student Grouping Application
+- **Stack:** Python, numpy, matplotlib, networkx, Tkinter
 - **Features:**
-  - Markdown editor
-  - Comment system
-  - Social sharing buttons
-  - Responsive article layout
+  - Generates random 120-160 students
+  - Groups students using a similarity algorithm
+  - Multi-tab GUI with subject distribution, network, timeline and matrix views
 
-### Analytics Dashboard
-- **Stack:** JavaScript, D3.js (or similar)
-- **Features:**
-  - Interactive charts and graphs
-  - Data filtering and search
-  - Export functionality
-  - Real-time updates
-
-### API Integration
-- **Stack:** Node.js, REST APIs
-- **Features:**
-  - Secure API communication
-  - Error handling and logging
-  - Data transformation
-  - Automatic content updates
+**Repository:** [Groupr on GitHub](https://github.com/jimmyht98/IS211)
 
 ---
 
@@ -241,6 +223,12 @@ Edit `index.html`:
 ```html
 <h1>Hei, jeg er [Your Name]!</h1>
 <p>[Your tagline here]</p>
+```
+
+#### Replace Profile Photo
+Swap out `jimmy-photo.jpeg` in the repo root with your own photo. Keep the same filename, or update the `src` attribute in `index.html`:
+```html
+<img src="your-photo.jpeg" alt="Your Name" class="about-photo" />
 ```
 
 #### Change Contact Information
@@ -280,43 +268,6 @@ Edit CSS variables in `style.css`:
 }
 ```
 
-#### Modify Fonts
-In `style.css`, update the font-family:
-```css
-body {
-    font-family: 'Your Font', sans-serif;
-}
-```
-
----
-
-## Dark Mode Support
-
-The portfolio automatically detects and adapts to your system's dark mode preference.
-
-### Dark Mode Features
-- Automatic detection based on `prefers-color-scheme` media query
-- Readable text contrast in both modes
-- Optimized colors for OLED screens
-- No manual toggle needed (uses system settings)
-
-**CSS Variables for Dark Mode:**
-```css
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary: #ffffff;
-        --secondary: #0a0a0a;
-        --light-gray: #1a1a1a;
-        --dark-gray: #cccccc;
-    }
-}
-```
-
-### Testing Dark Mode
-- Windows: Settings → Personalization → Colors → Dark
-- macOS: System Preferences → General → Appearance → Dark
-- Linux: Follow your desktop environment's dark mode settings
-
 ---
 
 ## Browser Support
@@ -330,13 +281,6 @@ The portfolio automatically detects and adapts to your system's dark mode prefer
 | Opera | Yes | Yes |
 | IE | No | N/A |
 
-### Required Browser Features
-- CSS Grid and Flexbox
-- CSS Variables (Custom Properties)
-- JavaScript ES6+ (Arrow functions, const/let)
-- Intersection Observer API
-- Backdrop-filter support
-
 ---
 
 ## Performance
@@ -344,60 +288,8 @@ The portfolio automatically detects and adapts to your system's dark mode prefer
 ### Optimization Features
 - Minimal Dependencies - Vanilla JavaScript, no frameworks
 - Efficient CSS - CSS Grid and Flexbox for layouts
-- Optimized Images - Gradient backgrounds instead of images
-- Fast Load Time - ~50-100ms initial render
+- External image file - photo is a separate `.jpeg` file for fast load times
 - Mobile Optimized - Responsive design, touch-friendly
-
-### Lighthouse Scores Target
-- Performance: 90+
-- Accessibility: 95+
-- Best Practices: 95+
-- SEO: 95+
-
-### Asset Sizes
-- HTML: ~15KB
-- CSS: ~20KB
-- JavaScript: <5KB
-- Total: ~40KB (uncompressed)
-
----
-
-## Responsive Design
-
-### Breakpoints
-```css
-Desktop:  1200px and above
-Tablet:   768px - 1199px
-Mobile:   480px - 767px
-Small:    Below 480px
-```
-
-### Features That Respond
-- Navigation menu (stacks on mobile)
-- Hero text sizes (3.5rem → 1.5rem)
-- Grid layouts (2-3 columns → 1 column)
-- Spacing and padding (scales proportionally)
-- Button sizes (maintains touch-friendly targets)
-
----
-
-## SEO Optimization
-
-The portfolio includes:
-- Semantic HTML structure
-- Meta tags and descriptions
-- Open Graph tags for social sharing
-- Mobile viewport configuration
-- Proper heading hierarchy (H1, H2, H3)
-- Alt text for images
-- Responsive design (mobile-friendly)
-
-**Recommended Enhancements:**
-1. Add meta descriptions to each page
-2. Include structured data (JSON-LD)
-3. Create a robots.txt file
-4. Submit to Google Search Console
-5. Add Open Graph images
 
 ---
 
@@ -419,20 +311,6 @@ Contributions are welcome! Feel free to:
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-```
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-```
-
----
-
 ## Contact
 
 **Jimmy H. Trinh**
@@ -441,64 +319,21 @@ in the Software without restriction...
 - GitHub: [github.com/jimmyht98](https://github.com/jimmyht98)
 - LinkedIn: [linkedin.com/in/jimmy-trinh](https://www.linkedin.com/in/jimmy-trinh-578951264/)
 
-### Let's Connect!
-Feel free to reach out for:
-- Job opportunities
-- Collaboration projects
-- Discussing tech and ideas
-- Mentoring and learning exchanges
-
----
-
-## Acknowledgments
-
-- Thanks to everyone who views and enjoys this portfolio
-- Inspiration from modern web design trends
-- Apple for the SF Pro font family
-- The web development community for best practices and standards
-
----
-
-## Statistics
-
-- **Version:** 1.0.0
-- **Created:** May 2026
-- **Last Updated:** May 2026
-- **Pages:** 7 (1 main + 6 project pages)
-- **Technologies:** 3 (HTML, CSS, JavaScript)
-- **Projects Showcased:** 6
-- **Skills Listed:** 6 categories
-
----
-
-## Learning Resources
-
-Resources that helped build this portfolio:
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [CSS-Tricks](https://css-tricks.com/)
-- [Web.dev](https://web.dev/)
-- [JavaScript Info](https://javascript.info/)
-
----
-
-## Future Enhancements
-
-Planned features for future versions:
-- Project filtering by technology
-- Contact form with email integration
-- Analytics tracking
-- CMS integration
-- Animation preferences (respects prefers-reduced-motion)
-- Case study articles
-
 ---
 
 ## Changelog
 
-### Version 1.0.0 - Initial Release
+### Version 1.0.1 - May 2026
+- Added personal profile photo to the "Om meg" section
+- Centered photo, "Om meg" heading, "Ferdigheter" heading, and skill cards
+- Bio text and Journal section text kept left-aligned for readability
+- Inlined all CSS from `style.css` into `index.html` for portability
+- Fixed navigation bar spacing to be consistent across all pages
+- Photo referenced as external file (`jimmy-photo.jpeg`) for clean, maintainable code
+
+### Version 1.0.0 - April 2026 - Initial Release
 - Complete portfolio website
-- 6 showcase projects
-- Dark mode support
+- 3 showcase school projects
 - Responsive design
 - Smooth animations
 - Apple SF font
@@ -506,4 +341,4 @@ Planned features for future versions:
 
 ---
 
-*Last Updated: May 1, 2026*
+*Last Updated: May 2, 2026*
