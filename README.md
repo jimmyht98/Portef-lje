@@ -169,9 +169,9 @@ npx http-server
 # Or simply open index.html in your browser
 ```
 
-3. **View in browser (using Netlify for deployment**
+3. **View in browser (using Github Pages for deployment)**
 ```
-https://jimmyht.netlify.app/
+https://jimmyht98.github.io/Portef-lje/
 ```
 
 ### Quick Start (No Server Required)
