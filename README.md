@@ -1,6 +1,6 @@
 # Jimmy H. Trinh - Portfolio Website
 
-A modern, responsive portfolio website built with HTML and CSS. Showcasing projects, skills, and professional experience with an elegant design that impresses employers and clients.
+A modern, responsive portfolio website built with HTML, CSS and JavaScript. Showcasing projects, skills, and professional experience with an elegant design that impresses employers and clients.
 
 [Status: Active] [Language: Norwegian]
 
