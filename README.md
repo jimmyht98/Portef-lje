@@ -77,6 +77,7 @@ This is a professional portfolio website designed to showcase development skills
 - Typing effect on hero subtitle
 - Smooth page transitions
 - Hover effects on interactive elements
+- Underline hover effect on navigation tabs
 - Progress-based element reveals
 
 ### Accessibility
@@ -93,7 +94,6 @@ This is a professional portfolio website designed to showcase development skills
 Portfolio-website/
 ├── index.html                    # Main landing page
 ├── style.css                     # Global styles and theme
-├── jimmy-photo.jpeg              # Profile photo (place in repo root)
 ├── navi-safe.html               # NaviSafe project page
 ├── bcycle.html                  # Bcycle project page
 ├── groupr.html                  # Groupr project page
@@ -106,10 +106,9 @@ Portfolio-website/
 |------|---------|------|
 | `index.html` | Main portfolio page with hero, about, projects, and contact sections | ~20KB |
 | `style.css` | Global styles, animations, responsive design, and dark mode | ~20KB |
-| `jimmy-photo.jpeg` | Profile photo displayed in the About section | ~1MB |
 | `*-project.html` | Individual project detail pages | ~3-4KB each |
 
-> **Note:** `index.html` references `style.css` and `jimmy-photo.jpeg` as external files. Make sure all three are in the same folder when deploying.
+> **Note:** `index.html` references `style.css` as external files. Make sure these two are in the same folder when deploying.
 
 ---
 
@@ -323,7 +322,11 @@ Contributions are welcome! Feel free to:
 
 ## Changelog
 
-### Version 1.0.1 - May 2026
+### Version 1.0.2 - May 11 2026
+- Added an animated underline hover effect for the navigation tab
+- Added additional improvements for mobile layout
+
+### Version 1.0.1 - May 2nd 2026
 - Added personal profile photo to the "Om meg" section
 - Centered photo, "Om meg" heading, "Ferdigheter" heading, and skill cards
 - Bio text and Journal section text kept left-aligned for readability
@@ -331,7 +334,7 @@ Contributions are welcome! Feel free to:
 - Fixed navigation bar spacing to be consistent across all pages
 - Photo referenced as external file (`jimmy-photo.jpeg`) for clean, maintainable code
 
-### Version 1.0.0 - April 2026 - Initial Release
+### Version 1.0.0 - April 30th 2026 - Initial Release
 - Complete portfolio website
 - 3 showcase school projects
 - Responsive design
