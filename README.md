@@ -1,6 +1,6 @@
 # Jimmy Trinh — Portefølje
 
-En personlig og responsiv porteføljenettside som presenterer meg som utvikler, musikkskaper og nysgjerrig problemløser. Nettsiden er bygget med ren HTML, CSS og JavaScript, uten rammeverk eller eksterne avhengigheter.
+En personlig og responsiv porteføljenettside som presenterer meg som utvikler, musikkskaper og nysgjerrig problemløser. Nettsiden er bygget med ren HTML, CSS og JavaScript.
 
 **Status:** Aktiv  
 **Språk:** Norsk  
