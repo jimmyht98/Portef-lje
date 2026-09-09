@@ -1,347 +1,119 @@
-# Jimmy H. Trinh - Portfolio Website
+# Jimmy Trinh — Portefølje
 
-A modern, responsive portfolio website built with HTML, CSS and JavaScript. Showcasing projects, skills, and professional experience with an elegant design that impresses employers and clients.
+En personlig og responsiv porteføljenettside som presenterer meg som utvikler, musikkskaper og nysgjerrig problemløser. Nettsiden er bygget med ren HTML, CSS og JavaScript, uten rammeverk eller eksterne avhengigheter.
 
-[Status: Active] [Language: Norwegian]
+**Status:** Aktiv  
+**Språk:** Norsk  
+**Nettside:** [jimmyht98.github.io/Portef-lje](https://jimmyht98.github.io/Portef-lje/)
 
----
+## Nyeste oppdatering
 
-## Table of Contents
+### Versjon 2.0 — 10. september 2026
 
-- [About](#about)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Projects](#projects)
-- [Customization](#customization)
-- [Browser Support](#browser-support)
-- [Performance](#performance)
-- [Contributing](#contributing)
-- [Contact](#contact)
+- Ny, tydelig visuell identitet inspirert av møtet mellom teknologi, musikk og kreativitet.
+- Redesignet hero-seksjon med sterkere typografi og mer personlig introduksjon.
+- Moderne navigasjonsheader med mørk gradient, profesjonell navnebehandling og tydelig kontaktknapp.
+- Tre identitetskort for Teknologi, Musikk og Nysgjerrighet med konsekvent mørk bakgrunn og lesbar hvit tekst.
+- Nytt portrett i «Om meg»-seksjonen.
+- Sentrert prosjektoverskrift og et mer markant prosjektgalleri.
+- Prosjekttitler bruker samme oransje aksent som overskriftene i journalen.
+- Oppdatert journal- og kontaktdesign.
+- Forbedret responsivitet, mørk modus, tastaturnavigasjon og støtte for redusert bevegelse.
+- Sammenhengende uttrykk på hovedsiden, journalen og alle prosjektsidene.
 
----
+## Innhold
 
-## About
+- Personlig introduksjon og faglig profil
+- Bakgrunn fra teknologi, Music Business, DJ-ing og komposisjon
+- Ferdigheter innen frontend, backend, databaser, infrastruktur og skytjenester
+- Tre skoleprosjekter med egne detaljsider
+- Prosjektdagbok med refleksjoner rundt læring og arbeidsprosess
+- Kontaktinformasjon og profesjonelle profiler
 
-This is a professional portfolio website designed to showcase development skills, completed projects, and professional background. The site features a modern design with smooth animations, responsive layouts, and an engaging user experience that adapts to both light and dark modes.
+## Prosjekter
 
-**Key Highlights:**
-- Modern, clean design
-- Professional color scheme with orange accent (#FF6B35)
-- Fully responsive - works on desktop, tablet, and mobile
-- Dark mode support based on system preferences
-- Smooth animations and transitions
-- Interactive elements and hover effects
-- Apple SF Pro font family for a premium feel
-- Personal photo in the About section for a strong first impression
+### NaviSafe
 
----
+En webapplikasjon for rapportering av luftlige hindringer, utviklet for Kartverket.
 
-## Features
+- ASP.NET Core 9.0, MVC og Razor
+- MariaDB og Entity Framework Core
+- Leaflet, OpenStreetMap og Leaflet Draw
+- Rollebasert visning og responsivt grensesnitt
 
-### Hero Section
-- Eye-catching landing area with animated gradient text
-- Typing effect animation for the subtitle
-- Radial background gradients for visual depth
-- Call-to-action button
+[Se NaviSafe på GitHub](https://github.com/asklootz/NaviSafe)
 
-### About Section
-- Personal profile photo displayed centered above the bio
-- Professional biography and background (left-aligned for readability)
-- Centered "Om meg" and "Ferdigheter" headings
-- Skills displayed in an interactive grid layout
-- 6 skill categories: Frontend, Backend, Database, Infrastructure, Cloud Services, and Personal Traits
-- Smooth hover animations on skill items
+### Bcycle
 
-### Portfolio Projects
-- 3 featured school projects with individual detail pages:
-  - **NaviSafe** - Aerial Obstacle Reporting System
-  - **Bcycle** - Database system for bike rental
-  - **Groupr** - Student grouping application
-- Interactive project cards with gradient backgrounds
-- Individual project pages with detailed information
+Et databasesystem utviklet som gruppeprosjekt, med fokus på datamodellering, prosedyrer, roller og privilegier.
 
-### Contact Section
-- Multiple contact methods
-- Social media links
-- Email contact option
+- PL/SQL og PostgreSQL
+- Databasestruktur og spørringer
+- Constraints og dokumentasjon
 
-### Navigation
-- Sticky navigation bar with consistent spacing across all pages
-- Smooth scrolling to sections
-- Responsive mobile navigation
+[Se Bcycle på GitHub](https://github.com/jimmyht98/IS309)
 
-### Animations & Interactions
-- Staggered scroll animations
-- Typing effect on hero subtitle
-- Smooth page transitions
-- Hover effects on interactive elements
-- Underline hover effect on navigation tabs
-- Progress-based element reveals
+### Groupr
 
-### Accessibility
-- Semantic HTML structure
-- Proper color contrast
-- Responsive design
-- Keyboard navigation support
+En Python-applikasjon som genererer studenter og klasser og organiserer studenter i grupper basert på likhet.
 
----
+- Python, NumPy, Matplotlib og NetworkX
+- Tkinter-basert grensesnitt
+- Visualisering av fagfordeling, nettverk, tidslinje og matrise
 
-## Project Structure
+[Se Groupr på GitHub](https://github.com/jimmyht98/IS211)
 
-```
-Portfolio-website/
-├── index.html                    # Main landing page
-├── style.css                     # Global styles and theme
-├── navi-safe.html               # NaviSafe project page
-├── bcycle.html                  # Bcycle project page
-├── groupr.html                  # Groupr project page
-└── README.md                    # This file
+## Teknologi
+
+- HTML5 med semantisk sidestruktur
+- CSS3 med Grid, Flexbox, variabler og responsive mediespørringer
+- JavaScript for myk navigasjon og innholdsanimasjoner
+- Intersection Observer for fremdriftsbaserte visningseffekter
+- Systemfonter for rask lasting uten eksterne fontavhengigheter
+
+## Prosjektstruktur
+
+```text
+Portef-lje/
+├── index.html                 # Hovedside
+├── identity-ui.css           # Gjeldende designsystem og responsiv styling
+├── style.css                 # Grunnstil for detaljsidene
+├── jimmy-portrett.jpg        # Profilbilde
+├── journal.html              # Prosjektdagbok
+├── navi-safe.html            # NaviSafe-detaljside
+├── bcycle.html               # Bcycle-detaljside
+├── groupr.html               # Groupr-detaljside
+└── README.md                 # Prosjektdokumentasjon
 ```
 
-### File Details
+## Kjør lokalt
 
-| File | Purpose | Size |
-|------|---------|------|
-| `index.html` | Main portfolio page with hero, about, projects, and contact sections | ~20KB |
-| `style.css` | Global styles, animations, responsive design, and dark mode | ~20KB |
-| `*-project.html` | Individual project detail pages | ~3-4KB each |
+Klon prosjektet og start en enkel lokal webserver:
 
-> **Note:** `index.html` references `style.css` as external files. Make sure these two are in the same folder when deploying.
-
----
-
-## Technologies Used
-
-### Frontend
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with:
-  - CSS Grid for layouts
-  - Flexbox for flexible components
-  - CSS Variables for theming
-  - Media queries for responsiveness
-  - Animations and transitions
-- **JavaScript** - Smoother transitions
-
-### Design System
-- **Font Family:** Apple SF Pro (San Francisco)
-- **Color Scheme:**
-  - Primary: #1a1a1a (Dark)
-  - Secondary: #ffffff (White)
-  - Accent: #FF6B35 (Orange)
-  - Light Gray: #f5f5f5
-  - Dark Gray: #333333
-- **Border Radius:** 12-24px for modern look
-- **Shadows:** Multi-layer shadow effects for depth
-
-### Browser APIs
-- **Intersection Observer** - For scroll-triggered animations
-- **Viewport Meta Tag** - For mobile optimization
-- **CSS Media Queries** - For responsive design and dark mode
-
----
-
-## Getting Started
-
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- A text editor for customization (VS Code, Sublime, etc.)
-- Git (optional, for version control)
-
-### Installation
-
-1. **Clone the repository**
 ```bash
-git clone https://github.com/jimmyht98/portfolio-website.git
-cd portfolio-website
-```
-
-2. **Open locally**
-```bash
-# Using Python (Python 3.x)
+git clone https://github.com/jimmyht98/Portef-lje.git
+cd Portef-lje
 python -m http.server 8000
-
-# Using Node.js with http-server
-npx http-server
-
-# Or simply open index.html in your browser
 ```
 
-3. **View in browser (using Github Pages for deployment)**
-```
-https://jimmyht98.github.io/Portef-lje/
-```
+Åpne deretter [http://localhost:8000](http://localhost:8000) i nettleseren.
 
-### Quick Start (No Server Required)
-Simply download the files and open `index.html` in your web browser. Make sure `style.css` and `jimmy-photo.jpeg` are in the same folder.
+## Tilgjengelighet
 
----
+- Hopp-lenke til hovedinnholdet
+- Synlige fokusmarkeringer for tastaturnavigasjon
+- Tydelig kontrast i navigasjon, identitetskort og prosjektinnhold
+- Støtte for `prefers-reduced-motion`
+- Responsiv navigasjon og innhold for mobil, nettbrett og desktop
 
-## Projects
+## Kontakt
 
-### NaviSafe - Aerial Obstacle Reporting System
-- **Stack:** ASP.NET Core, PostgreSQL, HTML/CSS/JavaScript
-- **Client:** Kartverket (Norwegian Mapping Authority)
-- **Features:**
-  - Obstacle reporting form
-  - Data visualization with search and filters
-  - Role-based access (pilot/admin views)
-  - Responsive design for fieldwork
+**Jimmy Trinh**
 
-**Repository:** [NaviSafe on GitHub](https://github.com/asklootz/NaviSafe)
-
-### Bcycle - Bike Rental Database System
-- **Stack:** PLSQL, ASP.NET Core
-- **Team Project:** Developed with group members
-- **Features:**
-  - Bike rental management
-  - Customer database
-  - Reservation system
-  - Analytics and reporting
-
-**Repository:** [Bcycle on GitHub](https://github.com/jimmyht98/IS309)
-
-### Groupr - Student Grouping Application
-- **Stack:** Python, numpy, matplotlib, networkx, Tkinter
-- **Features:**
-  - Generates random 120-160 students
-  - Groups students using a similarity algorithm
-  - Multi-tab GUI with subject distribution, network, timeline and matrix views
-
-**Repository:** [Groupr on GitHub](https://github.com/jimmyht98/IS211)
-
----
-
-## Customization
-
-### How to Personalize Your Portfolio
-
-#### Update Personal Information
-Edit `index.html`:
-```html
-<h1>Hei, jeg er [Your Name]!</h1>
-<p>[Your tagline here]</p>
-```
-
-#### Replace Profile Photo
-Swap out `jimmy-photo.jpeg` in the repo root with your own photo. Keep the same filename, or update the `src` attribute in `index.html`:
-```html
-<img src="your-photo.jpeg" alt="Your Name" class="about-photo" />
-```
-
-#### Change Contact Information
-```html
-<a href="mailto:your.email@example.com" class="contact-link">✉️ E-post</a>
-<a href="https://github.com/yourprofile" class="contact-link" target="_blank">🔗 GitHub</a>
-```
-
-#### Update Skills
-Edit the skills section in `index.html`:
-```html
-<div class="skill-item">
-    <h3>Your Skill</h3>
-    <p>Technologies and tools</p>
-</div>
-```
-
-#### Add/Remove Projects
-1. Create a new HTML file for your project: `my-project.html`
-2. Copy structure from existing project pages
-3. Add link in the portfolio grid:
-```html
-<a class="portfolio-card" href="my-project.html">
-    <!-- Card content -->
-</a>
-```
-
-#### Change Color Scheme
-Edit CSS variables in `style.css`:
-```css
-:root {
-    --primary: #1a1a1a;
-    --secondary: #ffffff;
-    --accent: #FF6B35;      /* Change this to your color */
-    --light-gray: #f5f5f5;
-    --dark-gray: #333333;
-}
-```
-
----
-
-## Browser Support
-
-| Browser | Desktop | Mobile |
-|---------|---------|--------|
-| Chrome | Yes | Yes |
-| Firefox | Yes | Yes |
-| Safari | Yes | Yes |
-| Edge | Yes | Yes |
-| Opera | Yes | Yes |
-| IE | No | N/A |
-
----
-
-## Performance
-
-### Optimization Features
-- Minimal Dependencies - Vanilla JavaScript, no frameworks
-- Efficient CSS - CSS Grid and Flexbox for layouts
-- External image file - photo is a separate `.jpeg` file for fast load times
-- Mobile Optimized - Responsive design, touch-friendly
-
----
-
-## Contributing
-
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest improvements
-- Improve design
-- Update documentation
-- Add new features
-
-### How to Contribute
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## Contact
-
-**Jimmy H. Trinh**
-
-- Email: jimmyht98@hotmail.com
+- E-post: [jimmyht98@hotmail.com](mailto:jimmyht98@hotmail.com)
 - GitHub: [github.com/jimmyht98](https://github.com/jimmyht98)
-- LinkedIn: [linkedin.com/in/jimmy-trinh](https://www.linkedin.com/in/jimmy-trinh-578951264/)
+- LinkedIn: [Jimmy Trinh](https://www.linkedin.com/in/jimmy-trinh-578951264/)
 
 ---
 
-## Changelog
-
-### Version 1.0.2 - May 11 2026
-- Added an animated underline hover effect for the navigation tab
-- Added additional improvements for mobile layout
-
-### Version 1.0.1 - May 2nd 2026
-- Added personal profile photo to the "Om meg" section
-- Centered photo, "Om meg" heading, "Ferdigheter" heading, and skill cards
-- Bio text and Journal section text kept left-aligned for readability
-- Inlined all CSS from `style.css` into `index.html` for portability
-- Fixed navigation bar spacing to be consistent across all pages
-- Photo referenced as external file (`jimmy-photo.jpeg`) for clean, maintainable code
-
-### Version 1.0.0 - April 30th 2026 - Initial Release
-- Complete portfolio website
-- 3 showcase school projects
-- Responsive design
-- Smooth animations
-- Apple SF font
-- Professional color scheme
-
----
-
-*Last Updated: May 2, 2026*
+Sist oppdatert: 10. september 2026
