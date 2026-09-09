@@ -10,23 +10,23 @@ En personlig og responsiv porteføljenettside som presenterer meg som utvikler, 
 
 ### Versjon 2.0 — 10. september 2026
 
-- Ny, tydelig visuell identitet inspirert av møtet mellom teknologi, musikk og kreativitet.
-- Redesignet hero-seksjon med sterkere typografi og mer personlig introduksjon.
-- Moderne navigasjonsheader med mørk gradient, profesjonell navnebehandling og tydelig kontaktknapp.
-- Tre identitetskort for Teknologi, Musikk og Nysgjerrighet med konsekvent mørk bakgrunn og lesbar hvit tekst.
-- Nytt portrett i «Om meg»-seksjonen.
-- Sentrert prosjektoverskrift og et mer markant prosjektgalleri.
-- Prosjekttitler bruker samme oransje aksent som overskriftene i journalen.
-- Oppdatert journal- og kontaktdesign.
-- Forbedret responsivitet, mørk modus, tastaturnavigasjon og støtte for redusert bevegelse.
-- Sammenhengende uttrykk på hovedsiden, journalen og alle prosjektsidene.
+- Ny, tydelig visuell identitet inspirert av møtet mellom teknologi, musikk og kreativitet
+- Redesignet hero-seksjon med sterkere typografi og mer personlig introduksjon
+- Moderne navigasjonsheader med mørk gradient, profesjonell navnebehandling og tydelig kontaktknapp
+- Tre identitetskort for Teknologi, Musikk og Nysgjerrighet med konsekvent mørk bakgrunn og lesbar hvit tekst
+- Nytt portrett i «Om meg»-seksjonen
+- Sentrert prosjektoverskrift og et mer markant prosjektgalleri
+- Prosjekttitler bruker samme oransje aksent som overskriftene i journalen
+- Oppdatert journal- og kontaktdesign
+- Forbedret responsivitet, mørk modus, tastaturnavigasjon og støtte for redusert bevegelse
+- Sammenhengende uttrykk på hovedsiden, journalen og alle prosjektsidene
 
 ## Innhold
 
 - Personlig introduksjon og faglig profil
 - Bakgrunn fra teknologi, Music Business, DJ-ing og komposisjon
 - Ferdigheter innen frontend, backend, databaser, infrastruktur og skytjenester
-- Tre skoleprosjekter med egne detaljsider
+- Tre prosjekter med egne detaljsider
 - Prosjektdagbok med refleksjoner rundt læring og arbeidsprosess
 - Kontaktinformasjon og profesjonelle profiler
 
@@ -93,7 +93,6 @@ Klon prosjektet og start en enkel lokal webserver:
 ```bash
 git clone https://github.com/jimmyht98/Portef-lje.git
 cd Portef-lje
-python -m http.server 8000
 ```
 
 Åpne deretter [http://localhost:8000](http://localhost:8000) i nettleseren.
