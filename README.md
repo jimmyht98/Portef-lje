@@ -55,13 +55,25 @@ Et databasesystem utviklet som gruppeprosjekt, med fokus på datamodellering, pr
 
 ### Groupr
 
-En Python-applikasjon som genererer studenter og klasser og organiserer studenter i grupper basert på likhet.
+En Python-applikasjon som genererer studenter og klasser, og organiserer studentene i grupper basert på likhet.
 
 - Python, NumPy, Matplotlib og NetworkX
 - Tkinter-basert grensesnitt
 - Visualisering av fagfordeling, nettverk, tidslinje og matrise
 
 [Se Groupr på GitHub](https://github.com/jimmyht98/IS211)
+
+### One More Boop
+
+Et meningsløst spill som tester trykkingen din på en knapp uten begrensninger, med enkel grafikk, belønninger og intuitiv kontroll.
+
+- Totalt antall trykk
+- Valgt knappefarge
+- Preferanse for lyd
+- Preferanse for haptisk tilbakemelding
+- Preferanse for mørk modus
+
+[Se One More Boop på GitHub](https://github.com/jimmyht98/One-More-Boop)
 
 ## Teknologi
 
@@ -75,14 +87,18 @@ En Python-applikasjon som genererer studenter og klasser og organiserer studente
 
 ```text
 Portef-lje/
-├── index.html                 # Hovedside
+├── index.html                # Hovedside
 ├── identity-ui.css           # Gjeldende designsystem og responsiv styling
 ├── style.css                 # Grunnstil for detaljsidene
 ├── jimmy-portrett.jpg        # Profilbilde
 ├── journal.html              # Prosjektdagbok
 ├── navi-safe.html            # NaviSafe-detaljside
+├── navi-safe-logo.png        # Logo
 ├── bcycle.html               # Bcycle-detaljside
+├── bcycle-logo.png           # Logo   
 ├── groupr.html               # Groupr-detaljside
+├── groupr-logo.png           # Logo
+├── one-more-boop.html        # One More Boop-detaljside
 └── README.md                 # Prosjektdokumentasjon
 ```
 
