@@ -347,11 +347,21 @@ section { scroll-margin-top: 88px; }
 .portfolio-card::before { display: none; }
 .portfolio-card:hover { transform: translateY(-7px); border: 0; box-shadow: 8px 8px 0 var(--pulse); }
 .portfolio-card:nth-child(2):hover { transform: translateY(calc(3rem - 7px)); }
-.project-visual { height: 220px !important; font-size: 3.2rem !important; position: relative; overflow: hidden; filter: saturate(.75); }
+.project-visual { height: 220px !important; font-size: 3.2rem !important; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; filter: saturate(.88); }
+.project-visual img {
+    width: min(62%, 168px);
+    height: 72%;
+    object-fit: contain;
+    filter: drop-shadow(0 14px 22px rgba(4, 10, 23, .28));
+    transition: transform 180ms ease;
+}
+.portfolio-card:hover .project-visual img { transform: scale(1.045); }
 .project-visual::after { content: "PROJECT"; position: absolute; right: .8rem; bottom: .6rem; color: rgba(255,255,255,.65); font: 800 .7rem Bahnschrift, sans-serif; letter-spacing: .16em; writing-mode: vertical-rl; }
 .visual-navisafe { background: linear-gradient(135deg, #0f5f8e, #8ed8f8) !important; }
-.visual-bcycle { background: linear-gradient(135deg, #376929, #c8f135) !important; }
-.visual-groupr { background: linear-gradient(135deg, #6935a2, #ff5c35) !important; }
+.visual-navisafe img { height: 78%; }
+.visual-bcycle { background: linear-gradient(135deg, #072f67, #13bfe9) !important; }
+.visual-groupr { background: linear-gradient(135deg, #34147d, #3cbef0) !important; }
+.visual-one-more-boop { background: linear-gradient(135deg, #251250, #f34f82) !important; }
 .card-content { min-height: 270px; padding: 1.5rem; align-items: flex-start; text-align: left; }
 .card-content h3 { margin: 0 0 .7rem; color: var(--signal); font: 800 1.24rem/1.25 Bahnschrift, sans-serif; text-transform: uppercase; }
 .card-content p { color: var(--muted); font-size: .94rem; }
@@ -387,6 +397,17 @@ footer a { color: var(--pulse); }
 .project-hero p { max-width: 780px; margin: 0; color: rgba(255,255,255,.7); font-size: 1.14rem; }
 .project-detail { gap: 1rem; padding: 4.5rem 1.5rem 6rem; }
 .project-image { min-height: 300px; border-radius: 0; background: linear-gradient(135deg, var(--signal), var(--sky)); box-shadow: 10px 10px 0 var(--pulse); }
+.project-image img {
+    width: min(56%, 220px);
+    max-height: 225px;
+    object-fit: contain;
+    filter: drop-shadow(0 18px 26px rgba(4, 10, 23, .26));
+}
+.project-image-navisafe { background: linear-gradient(135deg, #0f5f8e, #8ed8f8); }
+.project-image-navisafe img { max-height: 240px; }
+.project-image-bcycle { background: linear-gradient(135deg, #072f67, #13bfe9); }
+.project-image-groupr { background: linear-gradient(135deg, #34147d, #3cbef0); }
+.project-image-one-more-boop { background: linear-gradient(135deg, #251250, #f34f82); }
 .project-summary a:not(.btn) { color: var(--signal-dark); font-weight: 700; }
 #journal-hero { min-height: 58vh; }
 #journal-content { max-width: 1100px; }
