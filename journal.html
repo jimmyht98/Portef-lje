@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#101722">
+    <meta name="theme-color" content="#1b2635">
     <title>Journal - Jimmy H. Trinh</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -18,56 +18,6 @@
         body {
             background: var(--secondary);
             color: var(--primary);
-        }
-
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 999;
-            background: rgba(20, 20, 20, 0.96);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.25rem 2rem;
-            flex-wrap: wrap;
-        }
-
-        nav .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary);
-        }
-
-        nav div { display: flex; gap: 1.25rem 3rem; }
-
-        nav a {
-            text-decoration: none;
-            color: rgba(255,255,255,0.85);
-            transition: color 0.3s ease;
-            position: relative;
-        }
-
-        nav a:hover { color: var(--accent); }
-
-        /* Animert understrek-effekt for navigasjonslenker ved hover */
-        nav a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 0;
-            background-color: var(--accent);
-            transition: width 0.3s ease;
-        }
-
-        nav a:hover::after {
-            width: 100%;
         }
 
         .hero {
@@ -183,12 +133,9 @@
                 grid-template-columns: 1fr;
             }
 
-            nav {
-                padding: 1rem 1.25rem;
-            }
         }
     </style>
-    <link rel="stylesheet" href="identity-ui.css">
+    <link rel="stylesheet" href="identity-ui.css?v=20260913">
 </head>
 <body class="journal-page">
     <a class="skip-link" href="#journal-content">Hopp til innhold</a>

@@ -8,6 +8,17 @@ En personlig og responsiv porteføljenettside som presenterer meg som utvikler, 
 
 ## Nyeste oppdatering
 
+### Versjon 2.1 — 13. september 2026
+
+- Sentrert hero-innhold med tydelig presentasjon, prosjektknapp og kontaktknapp
+- Flyttet identitetskortene for Teknologi, Musikk og Nysgjerrighet under introduksjonen for en bedre brukerflyt
+- Oppdatert headeren med mørk blå bakgrunn, hvit logo og tydelige navigasjonsknapper
+- Sentrert teksten i «Om meg» og balansert den bedre mot portrettet
+- Forbedret mobiltilpasningen med fleksible bredder, berøringsvennlige knapper og navigasjon uten horisontal scrolling
+- Samordnet navigasjonen på hovedsiden og Journal-siden gjennom det felles stilarket `identity-ui.css`
+- Fjernet dupliserte navigasjonsregler fra Journal-siden for å unngå CSS-konflikter
+- Oppdatert nettleserens temafarge og lagt til versjonering av stilarket for å motvirke gammel hurtigbuffer
+
 ### Versjon 2.0 — 10. september 2026
 
 - Ny, tydelig visuell identitet inspirert av møtet mellom teknologi, musikk og kreativitet
@@ -26,7 +37,7 @@ En personlig og responsiv porteføljenettside som presenterer meg som utvikler, 
 - Personlig introduksjon og faglig profil
 - Bakgrunn fra teknologi, Music Business, DJ-ing og komposisjon
 - Ferdigheter innen frontend, backend, databaser, infrastruktur og skytjenester
-- Tre prosjekter med egne detaljsider
+- Fire prosjekter med egne detaljsider
 - Prosjektdagbok med refleksjoner rundt læring og arbeidsprosess
 - Kontaktinformasjon og profesjonelle profiler
 
@@ -131,4 +142,4 @@ cd Portef-lje
 
 ---
 
-Sist oppdatert: 10. september 2026
+Sist oppdatert: 13. september 2026
