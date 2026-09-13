@@ -8,7 +8,7 @@ En personlig og responsiv porteføljenettside som presenterer meg som utvikler, 
 
 ## Nyeste oppdatering
 
-### Versjon 2.1 — 13. september 2026
+### Versjon 2.0.1 — 13. september 2026
 
 - Sentrert hero-innhold med tydelig presentasjon, prosjektknapp og kontaktknapp
 - Flyttet identitetskortene for Teknologi, Musikk og Nysgjerrighet under introduksjonen for en bedre brukerflyt
